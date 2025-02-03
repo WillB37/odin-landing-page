@@ -1,16 +1,20 @@
 body {
   font-family: "Roboto", serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero {
   background-color: #1F2937;
   color: #F9FAF8;
+  flex: 1;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  width: 1000px;
+  width: 900px;
   margin: auto;
 }
 
@@ -33,7 +37,7 @@ body {
 .main-hero {
   display: flex;
   justify-content: space-between;
-  width: 1000px;
+  width: 900px;
   margin: auto;
   padding: 50px;
   gap: 30px;
@@ -58,6 +62,7 @@ button {
 .movies {
   width: 800px;
   margin: auto;
+  flex: 1;
 }
 .movie-posters {
   display: flex;
@@ -67,6 +72,9 @@ button {
 
 h2 {
   text-align: center;
+  font-weight: 900;
+  font-size: 36px;
+  color: #1F2937;
 }
 
 .poster {
@@ -82,4 +90,28 @@ h2 {
   border-style: solid;
   border-color: #3882F6;
   border-radius: 10px;
+}
+
+.movie-quote {
+  background-color: #E5E7EB;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 36px;
+  color: #1F2937;
+  margin: auto;
+  width: 700px;
+}
+
+.author {
+  width: 700px;
+  text-align: right;
+  margin: auto;
+  font-weight: bold;
 }
